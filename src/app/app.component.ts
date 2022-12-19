@@ -232,7 +232,7 @@ export class AppComponent {
      <div>Bairro: ${bairro}</div>
      <div>Encontra-se a ${distancia}km de distacia do ponto determinado, </div>
 
-     <p>atualmente conta com ${unidades} unidades, alcançando uma média de ${publico} pessoas</p>
+     <p>atualmente conta com ${unidades} funcionários.</p>
 
  </div>`;
 
@@ -337,29 +337,6 @@ export class AppComponent {
     this.hideMarkers();
     this.markers = [];
   }
-
-
-
-  /* addMaker() {
-    for (let i = 0; i < this.locations.length; i++) {
-      console.log(this.locations[i]);
-      let marker = new google.maps.Marker({
-        position: new google.maps.LatLng(
-          parseFloat(this.locations[i]["LAT"].toString()),
-          parseFloat(this.locations[i]["LNG"].toString())
-        ),
-        title:
-          this.locations[i]["NOMCON"].toString() +
-          "|" +
-          this.locations[i]["QTDE_UNIDADES"].toString(),
-        map: this.map,
-        icon: "assets/logo.png",
-      });
-    }
-  }*/
-
-
-
 
 
   clearMarkers() {
